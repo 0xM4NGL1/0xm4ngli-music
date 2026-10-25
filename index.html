@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>0xm4ngli music</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--font-sans:'Inter',system-ui,sans-serif;}
+body{margin:0;padding:0;background:#03030a;color:#e2e8f0;font-family:var(--font-sans),sans-serif;overflow:hidden;height:100vh;display:flex;align-items:center;justify-content:center;position:relative;}
+@keyframes float-slow{0%,100%{transform:translateY(0) rotate(0deg);}33%{transform:translateY(-12px) rotate(1deg);}66%{transform:translateY(8px) rotate(-1deg);}}
+@keyframes float-medium{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-20px) rotate(2deg);}}
+@keyframes float-fast{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-8px) rotate(-2deg);}}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 15px rgba(0,240,255,0.25),0 0 30px rgba(0,240,255,0.15);}50%{box-shadow:0 0 30px rgba(0,240,255,0.4),0 0 60px rgba(0,240,255,0.2);}}
+.float-slow{animation:float-slow 8s ease-in-out infinite;}
+.float-medium{animation:float-medium 6s ease-in-out infinite;}
+.float-fast{animation:float-fast 4s ease-in-out infinite;}
+.glow{animation:pulse-glow 4s ease-in-out infinite;}
+.glass{background:rgba(255,255,255,0.03);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.05);border-radius:1.5rem;padding:2.5rem;max-width:28rem;width:100%;text-align:center;}
+</style>
+</head>
+<body>
+<div style="position:absolute;top:-10%;left:-10%;width:24rem;height:24rem;background:#00f0ff20;border-radius:50%;filter:blur(100px);animation:float-slow 8s ease-in-out infinite;"></div>
+<div style="position:absolute;bottom:-10%;right:-10%;width:30rem;height:30rem;background:#b300ff20;border-radius:50%;filter:blur(120px);animation:float-medium 6s ease-in-out infinite;"></div>
+<div style="position:absolute;top:40%;right:20%;width:16rem;height:16rem;background:#ff009015;border-radius:50%;filter:blur(80px);animation:float-fast 4s ease-in-out infinite;"></div>
+<header style="position:absolute;top:1.5rem;left:1.5rem;display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.4);z-index:20;"><span style="width:6px;height:6px;background:#00f0ff;border-radius:50%;animation:pulse-glow 2s infinite;"></span>0xm4ngli music</header>
+<section class="glass float-slow glow">
+  <h1 style="font-size:4rem;font-weight:800;letter-spacing:-0.05em;background:linear-gradient(to bottom right,#fff,#e0f7ff,#b300ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0.5rem;">0xm4ngli</h1>
+  <p style="font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:2rem;">music</p>
+  <div style="height:1px;width:4rem;margin:0 auto 1.5rem;background:linear-gradient(to right,transparent,#00f0ff,transparent);"></div>
+  <p style="color:rgba(255,255,255,0.7);font-size:0.875rem;line-height:1.6;">Neon glowy floating minimal experience. No clutter. Just sound and space.</p>
+  <a href="#" style="display:inline-block;margin-top:2rem;padding:0.75rem 2rem;border-radius:9999px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:0.875rem;text-decoration:none;backdrop-filter:blur(8px);transition:all .3s;">Listen</a>
+</section>
+</body>
+</html>
